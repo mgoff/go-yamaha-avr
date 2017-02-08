@@ -22,7 +22,7 @@ Call `yamaha.Connect()` with the IP address of the Yamaha receiver you'd like co
 	func main() {
 
 		// open the connection to the Yamaha device
-		device, err := Connect("192.168.1.50")
+		device, err := yamaha.Connect("192.168.1.50")
 		if err != nil {
 			log.Fatal(err)
 		}
