@@ -9,17 +9,17 @@ import (
 // struct used to hold our Yamaha connection
 type Yamaha struct {
 	address string
-	client *http.Client
+	client  *http.Client
 }
 
 // open a connection to the Yamaha device
 func Connect(address string) (Yamaha, error) {
-	return Yamaha{address:address, client:&http.Client{}}, nil
+	return Yamaha{address: address, client: &http.Client{}}, nil
 }
 
 // common http post method
 func (r Yamaha) Post(data string) error {
-	req, err := http.NewRequest("POST", "http://" + r.address + "/YamahaRemoteControl/ctrl", strings.NewReader(data))
+	req, err := http.NewRequest("POST", "http://"+r.address+"/YamahaRemoteControl/ctrl", strings.NewReader(data))
 	if err != nil {
 		return err
 	}
