@@ -1,9 +1,9 @@
 # go-yamaha-avr
-Yahama Audio/Video Receiver control through the Yamaha Control API
+A Go library for controlling Yahama Audio/Video receivers with network connections through the Yamaha Control API.
 
 Yamaha Control API
 ==================
-Yamaha has a simple API for controlling their receivers over the local network. This library implments a subset of the available network commands.
+Yamaha has a simple API for controlling their receivers over the local network. This library implments a subset of the available network commands and has been tested with a Yamaha RX-V481 receiver.
 
 Usage
 =====
