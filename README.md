@@ -3,7 +3,7 @@ A Go library for controlling Yahama Audio/Video receivers with network connectio
 
 Yamaha Control API
 ==================
-Yamaha has a simple API for controlling their receivers over the local network. This library implments a subset of the available network commands and has been tested with a Yamaha RX-V481 receiver.
+Yamaha has a simple API for controlling their receivers over the local network. This library implments a subset of the available network commands and has been tested with a [Yamaha RX-V481 receiver](http://amzn.to/2kl32xQ).
 
 Usage
 =====
