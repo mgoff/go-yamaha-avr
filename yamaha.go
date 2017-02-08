@@ -19,15 +19,15 @@ func Connect(address string) (Yamaha, error) {
 
 // common http post method
 func (r Yamaha) Post(data string) error {
-    req, err := http.NewRequest("POST", "http://" + r.address + "/YamahaRemoteControl/ctrl", strings.NewReader(data))
-    if err != nil {
-    	return err
-    }
+	req, err := http.NewRequest("POST", "http://" + r.address + "/YamahaRemoteControl/ctrl", strings.NewReader(data))
+	if err != nil {
+		return err
+	}
 
 	_, err = r.client.Do(req)
-    if err != nil { 
-    	return err
-    }	
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
